@@ -28,3 +28,15 @@ first commit date of each solution file. Solutions added by hand work too — ju
 The site pulls this repo every hour. To update within a minute of each push, add a fine-grained
 personal access token with `Actions: write` on the site repo as the secret `SITE_TOKEN` here;
 `.github/workflows/notify-site.yml` then triggers the site's sync workflow on every push.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0001-two-sum](https://github.com/Aiant5615/leetcode/tree/main/0001-two-sum/) | Easy |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0001-two-sum](https://github.com/Aiant5615/leetcode/tree/main/0001-two-sum/) | Easy |
+<!---LeetCode Topics End-->
