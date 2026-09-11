@@ -4,8 +4,8 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
         int value;
         UT_hash_handle hh;
     } *hashTable = NULL, *item;
-    
-    for (int i = 0; i< numsSize; i++) {
+
+    for (int i = 0; i < numsSize; i++) {
         int complement = target - nums[i];
         HASH_FIND_INT(hashTable, &complement, item);
         if (item) {
@@ -24,4 +24,5 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     *returnSize = 0;
     HASH_CLEAR(hh, hashTable);
     return malloc(0);
+
 }
