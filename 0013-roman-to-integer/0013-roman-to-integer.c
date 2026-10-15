@@ -1,0 +1,20 @@
+static int value(char ch) {
+    switch (ch) {
+        case 'I': return 1;
+        case 'V': return 5;
+        case 'X': return 10;
+        case 'L': return 50;
+        case 'C': return 100;
+        case 'D': return 500;
+        default: return 1000;
+    }
+}
+
+int romanToInt(char* s) {
+    int total = 0;
+    for (int i = 0; s[i]; i++) {
+        if (s[i + 1] && value(s[i]) < value(s[i + 1])) total -= value(s[i]);
+        else total += value(s[i]);
+    }
+    return total;
+}
